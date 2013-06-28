@@ -13,7 +13,7 @@ To use Vagrant in this repo, you have to do a few things:
 
 ##Prep:
 
-There are two tasks to run to prepare the environment.  The first task (gen_keys) creates an ssh key to become the root ssh key on all of the machines.  It also adds that key to root's authorized_keys file on all of the machines.  The second task (install_cookbooks) fires off a berkshelf install to the cookbooks directory.  There is also a clean up task (clean) that deletes the ssh and cookbooks.
+There are possible a few tasks to run to prepare the environment.  Currently, the first task (install_cookbooks) fires off a berkshelf install to the cookbooks directory.  There is also a clean up task (clean) that deletes the ssh and cookbooks.
 
 To run:
 

@@ -17,5 +17,5 @@ There are possible a few tasks to run to prepare the environment.  Currently, th
 
 To run:
 
-*rake install_cookbooks
-*rake clean
+  - rake install_cookbooks
+  - rake clean

@@ -12,13 +12,11 @@ Vagrant::Config.run do |config|
 
         bigcouch.vm.provision :chef_solo do |chef|
             chef.cookbooks_path = ["cookbooks", "my_cookbooks"]
-            chef.add_recipe "yum::yum"
-            chef.add_recipe "yum::epel"
-            chef.add_recipe "kazoo-repos::cloudant"
-            chef.add_recipe "kazoo-repos::erlang-solutions"
-            chef.add_recipe "kazoo-erlang"
-            chef.add_recipe "kazoo-bigcouch"
-            chef.json {
+            chef.roles_path = "roles"
+            chef.add_role("all_in_one")
+            chef.json = {
+                :couchdb_username => "foobaz",
+                :couchdb_plaintext_password => "foobaz",
             }
         end
 

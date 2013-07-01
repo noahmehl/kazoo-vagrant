@@ -1,0 +1,20 @@
+{
+  "name": "bigcouch",
+  "default_attributes": {
+  },
+  "json_class": "Chef::Role",
+  "env_run_lists": {
+  },
+  "run_list": [
+    "recipe[yum::yum]",
+    "recipe[yum::epel]",
+    "recipe[kazoo-repos::cloudant]",
+    "recipe[kazoo-repos::erlang-solutions]",
+    "recipe[kazoo-erlang]",
+    "recipe[kazoo-bigcouch]"
+  ],
+  "description": "Role to install 3 or more bigcouch servers",
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}

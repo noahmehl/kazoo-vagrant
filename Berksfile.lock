@@ -1,6 +1,9 @@
 {
-  "sha": "f4f24984c622bb637ab5026560c53fceee22edde",
+  "sha": "3b52a3d3aea3c6e09ad6faa6d49c58c7da7a26b7",
   "sources": {
+    "hostsfile": {
+      "locked_version": "1.0.2"
+    },
     "yum": {
       "locked_version": "2.3.0"
     }

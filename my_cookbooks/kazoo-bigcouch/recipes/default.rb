@@ -70,7 +70,7 @@ template "/etc/security/limits.d/bigcouch.limits.conf" do
   owner "root"
   group "root"
   mode 0644
-  notifies :restart, resources(:service => "bigcouch")
+  notifies :restart, resources(:service => "bigcouch"), :immediately
 end
 
 template "/home/bigcouch/.erlang.cookie" do
@@ -85,5 +85,5 @@ template "/opt/bigcouch/etc/vm.args" do
   owner "bigcouch"
   group "bigcouch"
   mode 0644
-  notifies :restart, resources(:service => "bigcouch")
+  notifies :restart, resources(:service => "bigcouch"), :immediately
 end

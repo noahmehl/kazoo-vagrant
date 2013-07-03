@@ -37,3 +37,13 @@ hostsfile_entry "192.168.122.113" do
     :create
 end
 
+hostsfile_entry "192.168.122.114" do
+    hostname "daisy.domain.com"
+    :create
+end
+
+hostsfile_entry "192.168.122.115" do
+    hostname "eric.domain.com"
+    :create
+end
+

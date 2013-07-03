@@ -17,10 +17,9 @@
 # limitations under the License.
 #
 
-package "esl-erlang" do
-  case node[:platform]
-  when "redhat","centos","scientific","fedora","suse","amazon"
-    package_name "esl-erlang"
-  end
-  action :install
+remote_file "#{Chef::Config[:file_cache_path]}/esl-erlang-compat-R14B-1.el6.noarch.rpm" do
+    source node['kazoo-erlang']['esl-erlang-compat']
+    action :create_if_missing
 end
+
+rpm_package "#{Chef::Config[:file_cache_path]}/esl-erlang-compat-R14B-1.el6.noarch.rpm"

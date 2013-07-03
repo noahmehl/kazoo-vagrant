@@ -9,11 +9,11 @@
     "recipe[kazoo-hostsfile]",
     "recipe[yum::yum]",
     "recipe[yum::epel]",
-    "recipe[kazoo-repos::cloudant]",
     "recipe[erlang]",
-    "recipe[kazoo-bigcouch]"
+    "recipe[kazoo-erlang]",
+    "recipe[rabbitmq]"
   ],
-  "description": "Role to install 3 or more bigcouch servers",
+  "description": "Role to install whapps servers",
   "chef_type": "role",
   "override_attributes": {
   }

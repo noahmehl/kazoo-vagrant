@@ -1,11 +1,25 @@
 {
-  "sha": "3b52a3d3aea3c6e09ad6faa6d49c58c7da7a26b7",
+  "sha": "347e37082c1bc629eeba703e83c24cbef4f85204",
   "sources": {
     "hostsfile": {
       "locked_version": "1.0.2"
     },
     "yum": {
       "locked_version": "2.3.0"
+    },
+    "rabbitmq": {
+      "locked_version": "2.1.2"
+    },
+    "erlang": {
+      "locked_version": "1.3.0",
+      "constraint": ">= 0.9.0"
+    },
+    "apt": {
+      "locked_version": "2.0.0",
+      "constraint": ">= 1.7.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.0"
     }
   }
 }
